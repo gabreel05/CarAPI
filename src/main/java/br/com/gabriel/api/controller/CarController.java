@@ -1,5 +1,6 @@
 package br.com.gabriel.api.controller;
 
+import br.com.gabriel.api.config.swagger.ApiPageable;
 import br.com.gabriel.api.controller.dto.CarDTO;
 import br.com.gabriel.api.controller.form.CarForm;
 import br.com.gabriel.api.exception.UniqueChassiException;
@@ -29,6 +30,7 @@ public class CarController {
     }
 
     @GetMapping
+    @ApiPageable
     public ResponseEntity<Page<CarDTO>> findAll(
             @RequestParam(required = false, defaultValue = "") String brand,
             @RequestParam(required = false, defaultValue = "") String name,
