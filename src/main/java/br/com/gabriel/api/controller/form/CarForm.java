@@ -15,9 +15,9 @@ public class CarForm {
     private String brand;
     @NotBlank
     private String color;
-    @NotNull()
+    @NotNull
     private Double value;
-    @NotNull()
+    @NotNull
     private Integer yearManufacture;
 
     public Car toCar() {
@@ -47,4 +47,5 @@ public class CarForm {
     public Integer getYearManufacture() {
         return yearManufacture;
     }
+
 }
