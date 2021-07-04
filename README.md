@@ -15,10 +15,10 @@
 
 ## Endpoints
 
-``POST`` ``/api/cars``
+## ``POST`` ``/api/cars``
 ### Realiza o cadastro de um carro
 
-``GET`` ``/api/cars``
+## ``GET`` ``/api/cars``
 ### Retorna uma lista com todos os carros
 #### Esse endpoint possuí vários filtros e ordenações:
 
@@ -80,8 +80,8 @@ Os parâmetros possíveis são:
 
 ``/api/cars?cheaperCar=cheaperCar``
 
-``GET`` ``/api/cars/{id}``
+## ``GET`` ``/api/cars/{id}``
 ### Retorna um único carro pelo ID
 
-``DELETE`` ``/api/cars/{id}``
+## ``DELETE`` ``/api/cars/{id}``
 ### Remove um carro pelo ID
