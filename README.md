@@ -10,16 +10,16 @@
 
 ### Como rodar o projeto
 #### Primeiramente é necessário criar o banco de dados, que está configurado para possuir o nome ``api``, porém caso deseje, pode ser trocado o nome através do arquivo ``application.properties`` dentro da pasta ``resources``.
-#### Depois, é necessário abrir o projeto em seu editor de preferência (Eclipse, IntelliJ, VS Code) e iniciar a classe principal ``ApiApplication.java``.
-#### As requisições do tipo ``GET`` podem ser testadas através do navagador, porém para testar a API em apenas um lugar, recomenda-se os softwares ``Postman`` e ``Insomnia``.
+#### Depois, é necessário abrir o projeto no seu editor de preferência (Eclipse, IntelliJ, VS Code) e iniciar a classe principal ``ApiApplication.java``.
+#### As requisições do tipo ``GET`` podem ser testadas através do navagador, porém para testar a API em apenas um lugar, recomendam-se os ‘softwares’ ``Postman`` e ``Insomnia``.
 
 ## Endpoints
 
 ## ``POST`` ``/api/cars``
-### Realiza o cadastro de um carro
+### Realiza o cadastro de um carro.
 
 ## ``GET`` ``/api/cars``
-### Retorna uma lista com todos os carros
+### Retorna uma lista com todos os carros.
 #### Esse endpoint possuí vários filtros e ordenações:
 
 - Filtrar por marca
@@ -30,7 +30,7 @@
   
 ``/api/cars?name=Duster``
 
-- Filtrar por cor
+- Filtrar por cor.
   
 ``/api/cars?color=Verde``
 
@@ -51,7 +51,7 @@
 ``/api/cars?brand=Renault&name=Duster&color=Verde``
 
 - Ordenar por todos os parâmetros possíveis, 
-  para isso deve-se indicar se é ascendente ou descendente
+  para isso deve-se indicar se é ascendente ou descendente.
   
 Os parâmetros possíveis são:
 - chassi
