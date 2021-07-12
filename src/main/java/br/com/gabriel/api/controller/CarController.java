@@ -21,6 +21,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/cars")
+@CrossOrigin
 public class CarController {
 
     private final CarService carService;

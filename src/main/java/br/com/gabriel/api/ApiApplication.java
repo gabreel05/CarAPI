@@ -29,7 +29,7 @@ public class ApiApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        Car AcuraLegend1987 = new Car(
+        /*Car AcuraLegend1987 = new Car(
                 "JH4KA2630HC019837",
                 "Legend",
                 "Acura",
@@ -220,6 +220,6 @@ public class ApiApplication implements CommandLineRunner {
                 DodgeDiplomat1985,
                 FordExplorer1992,
                 ToyotaEcho2001)
-        );
+        );*/
     }
 }
