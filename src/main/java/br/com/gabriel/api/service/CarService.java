@@ -27,7 +27,8 @@ public class CarService {
         this.carRepository = carRepository;
     }
 
-    public Page<CarDTO> findAll(String brand, String name, String color, String cheaperCar, String mostExpensiveCar, Pageable pagination) {
+    public Page<CarDTO> findAll(String brand, String name, String color, String cheaperCar,
+            String mostExpensiveCar, Pageable pagination) {
         Page<Car> cars;
 
         HashMap<String, String> filter = new HashMap<>();
