@@ -21,6 +21,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/cars")
+@CrossOrigin
 public class CarController {
 
     private final CarService carService;
@@ -37,7 +38,7 @@ public class CarController {
             @RequestParam(required = false, defaultValue = "") String color,
             @RequestParam(required = false, defaultValue = "") String cheaperCar,
             @RequestParam(required = false, defaultValue = "") String mostExpensiveCar,
-            @PageableDefault Pageable pagination) {
+            @PageableDefault(size = 100) Pageable pagination) {
         Page<CarDTO> carTDOS = carService.findAll(brand, name, color, cheaperCar, mostExpensiveCar, pagination);
 
         return ResponseEntity.ok().body(carTDOS);
